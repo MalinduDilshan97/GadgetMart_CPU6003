@@ -1,0 +1,27 @@
+/*
+ *Time   :- 1:32 AM
+ *Author :- Uvindu Mohotti
+ *Special Thing :-
+ */
+
+package lk.swlc.GadgetMartBackend.GadgetMartBackend.model.subcategory;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@XmlRootElement
+public class SubCategorySingleModel {
+
+    private String message;
+
+
+    @JsonProperty("data")
+    private SubCategory subCategory;
+}
